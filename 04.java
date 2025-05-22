@@ -47,7 +47,7 @@ class BookingSystem {
     public boolean cancelTicket(int ticketNumber) {
         for (int i = 0; i < tickets.length; i++) {
             if (tickets[i] != null && tickets[i].getTicketNumber() == ticketNumber) {
-                System.out.println("Cancelling ticket #" + ticketNumber + " at seat " + tickets[i].getSeatNumber());
+                System.out.println("Cancelling ticket " + ticketNumber + " at seat " + tickets[i].getSeatNumber());
                 tickets[i] = null;
                 return true;
             }
